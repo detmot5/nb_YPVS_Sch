@@ -1226,7 +1226,7 @@
   )
 
   (module Package_DIP:DIP-40_W15.24mm_LongPads (layer F.Cu) (tedit 5A02E8C5) (tstamp 5F486B58)
-    (at 95.25 59.69)
+    (at 108.205001 61.265001)
     (descr "40-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), LongPads")
     (tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil LongPads")
     (path /5F48EF1D)

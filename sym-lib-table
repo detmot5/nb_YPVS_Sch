@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Ypvs)(type Legacy)(uri ${KIPRJMOD}/Ypvs.lib)(options "")(descr ""))
+)
