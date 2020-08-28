@@ -567,12 +567,12 @@ $EndComp
 Wire Wire Line
 	1250 5500 1350 5500
 $Comp
-L Ypvs:Stm32f103_BluePill U?
+L Ypvs:Stm32f103_BluePill U1
 U 1 1 5F48EF1D
 P 6050 2250
-F 0 "U?" H 6025 3375 50  0000 C CNN
+F 0 "U1" H 6025 3375 50  0000 C CNN
 F 1 "Stm32f103_BluePill" H 6025 3284 50  0000 C CNN
-F 2 "" H 6000 2200 50  0001 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 6000 2200 50  0001 C CNN
 F 3 "" H 6000 2200 50  0001 C CNN
 	1    6050 2250
 	1    0    0    -1  
@@ -582,10 +582,10 @@ RPM_Input
 Text GLabel 5350 2550 0    50   Output ~ 0
 Servo_PWM
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0101
 U 1 1 5F4A4007
 P 6750 1300
-F 0 "#PWR?" H 6750 1150 50  0001 C CNN
+F 0 "#PWR0101" H 6750 1150 50  0001 C CNN
 F 1 "+3V3" H 6765 1473 50  0000 C CNN
 F 2 "" H 6750 1300 50  0001 C CNN
 F 3 "" H 6750 1300 50  0001 C CNN
@@ -593,10 +593,10 @@ F 3 "" H 6750 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 5F4A5041
 P 5300 3400
-F 0 "#PWR?" H 5300 3150 50  0001 C CNN
+F 0 "#PWR0102" H 5300 3150 50  0001 C CNN
 F 1 "GND" H 5305 3227 50  0000 C CNN
 F 2 "" H 5300 3400 50  0001 C CNN
 F 3 "" H 5300 3400 50  0001 C CNN
@@ -615,4 +615,48 @@ Wire Wire Line
 	5550 3150 5300 3150
 Wire Wire Line
 	5300 3150 5300 3400
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F4C806F
+P 6000 3650
+F 0 "H1" H 5950 3750 50  0000 L CNN
+F 1 "MountingHole" H 6100 3650 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6000 3650 50  0001 C CNN
+F 3 "~" H 6000 3650 50  0001 C CNN
+	1    6000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F4C9D1D
+P 6250 3650
+F 0 "H2" H 6200 3750 50  0000 L CNN
+F 1 "MountingHole" H 6350 3650 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6250 3650 50  0001 C CNN
+F 3 "~" H 6250 3650 50  0001 C CNN
+	1    6250 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F4CA910
+P 6500 3650
+F 0 "H3" H 6450 3750 50  0000 L CNN
+F 1 "MountingHole" H 6600 3650 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6500 3650 50  0001 C CNN
+F 3 "~" H 6500 3650 50  0001 C CNN
+	1    6500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F4CAE78
+P 6750 3650
+F 0 "H4" H 6700 3750 50  0000 L CNN
+F 1 "MountingHole" H 6850 3605 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6750 3650 50  0001 C CNN
+F 3 "~" H 6750 3650 50  0001 C CNN
+	1    6750 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
