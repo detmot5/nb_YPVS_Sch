@@ -168,33 +168,12 @@ Wire Wire Line
 Wire Wire Line
 	9950 1700 9700 1700
 Connection ~ 9700 1700
-$Comp
-L power:GND #PWR09
-U 1 1 5F48A288
-P 8050 3200
-F 0 "#PWR09" H 8050 2950 50  0001 C CNN
-F 1 "GND" H 8055 3027 50  0000 C CNN
-F 2 "" H 8050 3200 50  0001 C CNN
-F 3 "" H 8050 3200 50  0001 C CNN
-	1    8050 3200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 3000 8050 3000
-Wire Wire Line
-	8050 3000 8050 3200
-Text GLabel 8000 1600 2    50   Output ~ 0
-Servo_PWM
-Wire Wire Line
-	7850 1600 8000 1600
 Wire Notes Line rgb(0, 0, 2)
 	7800 3200 10750 3200
 Wire Notes Line rgb(0, 0, 0)
 	10750 3200 10750 650 
 Wire Notes Line rgb(0, 0, 2)
 	10750 650  7800 650 
-Wire Notes Line rgb(0, 0, 2)
-	7800 650  7800 3200
 Text Notes 8750 1000 0    79   ~ 0
 uC Power Supply
 Wire Notes Line rgb(0, 0, 0)
@@ -207,23 +186,6 @@ Wire Notes Line rgb(0, 0, 2)
 	7600 650  4350 650 
 Wire Notes Line rgb(0, 0, 2)
 	4350 650  4350 2300
-NoConn ~ 7850 2900
-NoConn ~ 7850 2800
-NoConn ~ 7850 2600
-NoConn ~ 7850 2500
-NoConn ~ 7850 2400
-NoConn ~ 7850 2300
-NoConn ~ 7850 2700
-NoConn ~ 7850 2200
-NoConn ~ 7850 2100
-NoConn ~ 7850 2000
-NoConn ~ 7850 1900
-NoConn ~ 7850 1800
-NoConn ~ 7850 1700
-NoConn ~ 7850 1500
-NoConn ~ 7850 1400
-NoConn ~ 7850 1300
-NoConn ~ 7850 1200
 Text Notes 5450 950  0    79   ~ 0
 Microcontroller
 $Comp
@@ -368,18 +330,14 @@ Wire Wire Line
 $Comp
 L power:+6V #PWR05
 U 1 1 5F4E2301
-P 1700 2950
-F 0 "#PWR05" H 1715 3215 50  0001 C CNN
-F 1 "+6V" H 1715 3123 50  0000 C CNN
-F 2 "" H 1700 2950 50  0001 C CNN
-F 3 "" H 1700 2950 50  0001 C CNN
-	1    1700 2950
+P 1950 2950
+F 0 "#PWR05" H 1965 3215 50  0001 C CNN
+F 1 "+6V" H 1965 3123 50  0000 C CNN
+F 2 "" H 1950 2950 50  0001 C CNN
+F 3 "" H 1950 2950 50  0001 C CNN
+	1    1950 2950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1400 3150 1700 3150
-Wire Wire Line
-	1700 3150 1700 2950
 Wire Notes Line rgb(0, 0, 8)
 	800  750  800  3800
 Wire Notes Line rgb(0, 0, 0)
@@ -566,17 +524,6 @@ F 3 "~" H 1050 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1250 5500 1350 5500
-$Comp
-L Ypvs:Stm32f103_BluePill U1
-U 1 1 5F48EF1D
-P 6050 2250
-F 0 "U1" H 6025 3375 50  0000 C CNN
-F 1 "Stm32f103_BluePill" H 6025 3284 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 6000 2200 50  0001 C CNN
-F 3 "" H 6000 2200 50  0001 C CNN
-	1    6050 2250
-	1    0    0    -1  
-$EndComp
 Text GLabel 6650 2850 2    50   Input ~ 0
 RPM_Input
 Text GLabel 5350 2550 0    50   Output ~ 0
@@ -595,12 +542,12 @@ $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5F4A5041
-P 6800 1650
-F 0 "#PWR0102" H 6800 1400 50  0001 C CNN
-F 1 "GND" H 6805 1477 50  0000 C CNN
-F 2 "" H 6800 1650 50  0001 C CNN
-F 3 "" H 6800 1650 50  0001 C CNN
-	1    6800 1650
+P 6900 1650
+F 0 "#PWR0102" H 6900 1400 50  0001 C CNN
+F 1 "GND" H 6905 1477 50  0000 C CNN
+F 2 "" H 6900 1650 50  0001 C CNN
+F 3 "" H 6900 1650 50  0001 C CNN
+	1    6900 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -656,12 +603,102 @@ Wire Wire Line
 Wire Wire Line
 	5350 3250 5550 3250
 Wire Wire Line
-	6500 1450 6800 1450
+	6500 1450 6900 1450
 Wire Wire Line
-	6800 1450 6800 1650
+	6900 1450 6900 1650
 Wire Wire Line
-	6500 1350 6800 1350
+	6500 1350 6900 1350
 Wire Wire Line
-	6800 1350 6800 1450
-Connection ~ 6800 1450
+	6900 1350 6900 1450
+Connection ~ 6900 1450
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5F4B83B8
+P 6600 1550
+F 0 "#PWR0103" H 6600 1400 50  0001 C CNN
+F 1 "+3V3" H 6615 1723 50  0000 C CNN
+F 2 "" H 6600 1550 50  0001 C CNN
+F 3 "" H 6600 1550 50  0001 C CNN
+	1    6600 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6500 1550 6600 1550
+Wire Notes Line rgb(0, 0, 2)
+	7800 650  7800 3200
+NoConn ~ 5550 1350
+NoConn ~ 5550 1450
+NoConn ~ 5550 1550
+NoConn ~ 5550 1650
+NoConn ~ 5550 1750
+NoConn ~ 5550 2050
+NoConn ~ 5550 2150
+NoConn ~ 5550 2250
+NoConn ~ 5550 2350
+NoConn ~ 5550 2450
+NoConn ~ 5550 2650
+NoConn ~ 5550 2750
+NoConn ~ 5550 2850
+NoConn ~ 5550 2950
+NoConn ~ 5550 3050
+NoConn ~ 5550 3150
+NoConn ~ 6500 3250
+NoConn ~ 6500 3150
+NoConn ~ 6500 3050
+NoConn ~ 6500 2950
+NoConn ~ 6500 2750
+NoConn ~ 6500 2650
+NoConn ~ 6500 2550
+NoConn ~ 6500 2450
+NoConn ~ 6500 2350
+NoConn ~ 6500 2250
+NoConn ~ 6500 2150
+NoConn ~ 6500 2050
+NoConn ~ 6500 1950
+NoConn ~ 6500 1850
+NoConn ~ 6500 1750
+NoConn ~ 6500 1650
+$Comp
+L Device:D D3
+U 1 1 5F51C076
+P 1650 3150
+F 0 "D3" H 1650 3367 50  0000 C CNN
+F 1 "1N4001" H 1650 3276 50  0000 C CNN
+F 2 "" H 1650 3150 50  0001 C CNN
+F 3 "~" H 1650 3150 50  0001 C CNN
+	1    1650 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3150 1950 3150
+Wire Wire Line
+	1950 3150 1950 2950
+Wire Wire Line
+	1500 3150 1400 3150
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5F521F21
+P 5000 1950
+F 0 "J?" H 4918 1625 50  0000 C CNN
+F 1 "Debug UART" H 4918 1716 50  0000 C CNN
+F 2 "" H 5000 1950 50  0001 C CNN
+F 3 "~" H 5000 1950 50  0001 C CNN
+	1    5000 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Ypvs:Stm32f103_BluePill U1
+U 1 1 5F48EF1D
+P 6050 2250
+F 0 "U1" H 6025 3375 50  0000 C CNN
+F 1 "Stm32f103_BluePill" H 6025 3284 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 6000 2200 50  0001 C CNN
+F 3 "" H 6000 2200 50  0001 C CNN
+	1    6050 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1850 5550 1850
+Wire Wire Line
+	5200 1950 5550 1950
 $EndSCHEMATC

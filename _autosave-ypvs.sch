@@ -524,17 +524,6 @@ F 3 "~" H 1050 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1250 5500 1350 5500
-$Comp
-L Ypvs:Stm32f103_BluePill U1
-U 1 1 5F48EF1D
-P 6050 2250
-F 0 "U1" H 6025 3375 50  0000 C CNN
-F 1 "Stm32f103_BluePill" H 6025 3284 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 6000 2200 50  0001 C CNN
-F 3 "" H 6000 2200 50  0001 C CNN
-	1    6050 2250
-	1    0    0    -1  
-$EndComp
 Text GLabel 6650 2850 2    50   Input ~ 0
 RPM_Input
 Text GLabel 5350 2550 0    50   Output ~ 0
@@ -642,8 +631,6 @@ NoConn ~ 5550 1450
 NoConn ~ 5550 1550
 NoConn ~ 5550 1650
 NoConn ~ 5550 1750
-NoConn ~ 5550 1850
-NoConn ~ 5550 1950
 NoConn ~ 5550 2050
 NoConn ~ 5550 2150
 NoConn ~ 5550 2250
@@ -677,7 +664,7 @@ U 1 1 5F51C076
 P 1650 3150
 F 0 "D3" H 1650 3367 50  0000 C CNN
 F 1 "1N4001" H 1650 3276 50  0000 C CNN
-F 2 "" H 1650 3150 50  0001 C CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 1650 3150 50  0001 C CNN
 F 3 "~" H 1650 3150 50  0001 C CNN
 	1    1650 3150
 	1    0    0    -1  
@@ -688,4 +675,30 @@ Wire Wire Line
 	1950 3150 1950 2950
 Wire Wire Line
 	1500 3150 1400 3150
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5F521F21
+P 5000 1950
+F 0 "J5" H 4918 1625 50  0000 C CNN
+F 1 "Debug UART" H 4918 1716 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5000 1950 50  0001 C CNN
+F 3 "~" H 5000 1950 50  0001 C CNN
+	1    5000 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Ypvs:Stm32f103_BluePill U1
+U 1 1 5F48EF1D
+P 6050 2250
+F 0 "U1" H 6025 3375 50  0000 C CNN
+F 1 "Stm32f103_BluePill" H 6025 3284 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 6000 2200 50  0001 C CNN
+F 3 "" H 6000 2200 50  0001 C CNN
+	1    6050 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1850 5550 1850
+Wire Wire Line
+	5200 1950 5550 1950
 $EndSCHEMATC
